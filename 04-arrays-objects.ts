@@ -1,11 +1,11 @@
-let hobbies = ["Eating", "Watching"]
+let hobbies = ["Eating", "Watching", "Chess", "Sleeping"]
 
-// hobbies.push(10)
+// hobbies.push(10) dahil puro string ang sa array natin at hindi dineclare na pwede na may number data type hindi tatangapin ung number 10
 
-// let userList: (string | number)[];
-let userList: Array<string | number>;
+let userList: (string | number)[];
+// let userList: Array<string | number>;
 
-userList = ["Elmer", "Elmer123", 123456]
+userList = ["Ceejay", "Ceejay7078", 123456]
 
 // console.log(userList)
 
@@ -18,9 +18,9 @@ let user: {
         id: number
     }
 } = {
-    name: "Elmer",
-    age: 31,
-    hobbies: ["Eating", "Sleeping"],
+    name: "Ceejay",
+    age: 20,
+    hobbies: ["Eating", "Watching", "Chess", "Sleeping"],
     role: {
         description: 'admin',
         id: 1
@@ -28,13 +28,15 @@ let user: {
 }
 
 // Must not null or undefined
-let val: {} = "Elmer Alvarado"
+let val: {} = "Ceejay Santos"
+
+// let test: {} = null //Type 'null' is not assignable to type '{}'.ts(2322)
 
 // Flexible Object - Record Type
 let data: Record<string, number | string>
 
 data = {
     1: 1,
-    name: 'Elmer'
-    // isPartTimeInstructor: true
+    name: 'Ceejay'
+    // isPartTimeInstructor: true mag e error to dahil wala naman sa assigned na data types yung boolean
 }
