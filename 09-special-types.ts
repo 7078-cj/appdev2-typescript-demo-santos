@@ -2,20 +2,22 @@
 let a: null;
 
 a = null
-// a = "Hi"
+// a = "Hi" nag eerror dahil ang expected type ay null
 
 let b: null | string
 
 b = null
 b = "Hi"
-// b = 10
+// b = 10 wala sa options ng data types ang number
 
 // Special Type - undefined
 let c: undefined;
 
 c = undefined
-// c = null
+// c = null ang null is intentional na wala ang undefined is hindi pa na a assigned ang value
 // c = "Hi"
+c = undefined;
+c
 
 let d: undefined | string
 
